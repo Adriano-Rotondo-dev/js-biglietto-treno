@@ -35,6 +35,6 @@ if (userAge <= 18 ) {
 } else if (userAge >= 65) {
     console.log( "Il tuo biglietto scontato costa " + (ticketPrice * 0.6).toFixed(2) + "€" ) 
 } else {
-    console.log("il tuo biglietto costa " + ticketPrice + "€" ) //inserita un'alternativa priva di scontistica per non ripetere il messaggio precedente
+    console.log("il tuo biglietto costa " + (ticketPrice).toFixed(2) + "€" ) //inserita un'alternativa priva di scontistica per non ripetere il messaggio precedente
 };
 

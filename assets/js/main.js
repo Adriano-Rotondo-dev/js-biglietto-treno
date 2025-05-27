@@ -11,6 +11,16 @@ TIP: per controllare che la vostra logica sui prezzi funzioni correttamente, pro
 
 // chiedere all'utente il numero di chilometri
 
-const travel_km = Number(prompt("Quanti km vuoi percorrere?"));
+const userKms = Number(prompt("Quanti km vuoi percorrere?"));
 
 // chiedere all'utente l'età del passeggero
+
+const userAge = Number(prompt("Quanti anni hai?"));
+
+//il prezzo del biglietto è definito in base ai km (0.21 € al km)
+//stampa il prezzo del biglietto prima di effettuare una scontistica
+
+const ticketPrice = Number(userKms * 0.21 );
+console.log(ticketPrice + "€");
+
+//calcola la scontistica sulla base dell'età dell'utente

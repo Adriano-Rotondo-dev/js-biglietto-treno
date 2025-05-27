@@ -31,6 +31,7 @@ const ticketPrice = Number(userKms * 0.21 );
 // >= 65 anni? 40% di sconto (prezzo * 0.6)
 // stampa il prezzo del biglietto finale 
 // inserisci il .toFixed per mostrare i due decimali 
+// ? sostituisci i console.log con alert per pop-up 
 
 if (userAge <= 18 ) {
     console.log( "Il tuo biglietto scontato costa €" + (ticketPrice * 0.8).toFixed(2) ) 

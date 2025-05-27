@@ -17,7 +17,7 @@ console.log("Hai inserito " + userKms + " chilometri.");
 // chiedere all'utente l'età del passeggero
 
 const userAge = Number(prompt("Quanti anni hai?"));
-console.log("Hai dichiarato " + userAge + " anni.")
+console.log("Hai dichiarato di avere " + userAge + " anni.")
 
 // il prezzo del biglietto è definito in base ai km (0.21 € al km)
 // stampa il prezzo del biglietto prima di effettuare una scontistica
@@ -31,10 +31,10 @@ const ticketPrice = Number(userKms * 0.21 );
 // inserisci il .toFixed per mostrare i due decimali 
 
 if (userAge <= 18 ) {
-    console.log( "Il tuo biglietto scontato costa " + (ticketPrice * 0.8).toFixed(2) + "€" )
+    console.log( "Il tuo biglietto scontato costa €" + (ticketPrice * 0.8).toFixed(2) )
 } else if (userAge >= 65) {
-    console.log( "Il tuo biglietto scontato costa " + (ticketPrice * 0.6).toFixed(2) + "€" ) 
+    console.log( "Il tuo biglietto scontato costa €" + (ticketPrice * 0.6).toFixed(2) ) 
 } else {
-    console.log("il tuo biglietto costa " + (ticketPrice).toFixed(2) + "€" ) //inserita un'alternativa priva di scontistica per non ripetere il messaggio precedente
+    console.log("il tuo biglietto costa €" + (ticketPrice).toFixed(2) ) //inserita un'alternativa priva di scontistica per non ripetere il messaggio precedente
 };
 

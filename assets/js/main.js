@@ -8,3 +8,9 @@ TIP: per controllare che la vostra logica sui prezzi funzioni correttamente, pro
 100km, 10 anni => prezzo corretto: €16.80
 100km, 70 anni => prezzo corretto: €12.60
 */
+
+// chiedere all'utente il numero di chilometri
+
+const travel_km = Number(prompt("Quanti km vuoi percorrere?"));
+
+// chiedere all'utente l'età del passeggero

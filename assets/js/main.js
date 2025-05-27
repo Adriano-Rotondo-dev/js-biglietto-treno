@@ -12,23 +12,25 @@ TIP: per controllare che la vostra logica sui prezzi funzioni correttamente, pro
 // chiedere all'utente il numero di chilometri
 
 const userKms = Number(prompt("Quanti km vuoi percorrere?"));
+console.log("Hai inserito " + userKms + " chilometri.");
 
 // chiedere all'utente l'età del passeggero
 
 const userAge = Number(prompt("Quanti anni hai?"));
+console.log("Hai dichiarato " + userAge + " anni.")
 
 //il prezzo del biglietto è definito in base ai km (0.21 € al km)
 //stampa il prezzo del biglietto prima di effettuare una scontistica
 
 const ticketPrice = Number(userKms * 0.21 );
 //  console.log(ticketPrice + "€");
-console.log("Il tuo biglietto costa " + ticketPrice + "€")
+console.log("Il tuo biglietto costerebbe " + ticketPrice + "€")
 
 //calcola la scontistica sulla base dell'età dell'utente
 
 if (userAge <= 18 ) {
-    console.log( "Il tuo biglietto scontato costa" + ticketPrice * 0.8 + "€" )
+    console.log( "Il tuo biglietto scontato costa " + ticketPrice * 0.8 + "€" )
 } else if (userAge >= 65) {
-    console.log( "Il tuo biglietto scontato costa" + ticketPrice * 0.6 + "€" ) 
+    console.log( "Il tuo biglietto scontato costa " + ticketPrice * 0.6 + "€" ) 
 }
 

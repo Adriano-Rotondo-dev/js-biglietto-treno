@@ -15,7 +15,6 @@
  //Generare un numero casuale compreso tra 1 e 9 (giocata del computer)
 
  const rngPC = Math.floor(Math.random() * 9 ) + 1;
-
-
+ console.log(userChoice, userNumber, rngPC);
 
  //Stabilire e comunicare chi ha vinto secondo le regole di pari o dispari

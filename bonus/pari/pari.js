@@ -4,7 +4,7 @@
 
  // chiedere all'utente di scegliere tra pari o dispari
 
- const userChoice = (prompt("Pari o dispari?"));
+ const userChoice = (prompt("Pari o Dispari?"));
  console.log("Hai scelto " + userChoice);
 
  //chiedere all'utente un numero intero compreso tra 1 e 9
@@ -18,3 +18,26 @@
  console.log(userChoice, userNumber, rngPC);
 
  //Stabilire e comunicare chi ha vinto secondo le regole di pari o dispari
+// stabilire la somma tra userNumber ed rngPC
+
+ const somma = (userNumber + rngPC);
+ console.log(somma);
+
+ //stabilire se la somma dei numeri è divisibile per 2
+console.log( somma % 2)
+
+// stabilire il vincitore secondo le condizioni di scelta del pari e dispari
+//stampa il messaggio di vittoria o sconfitta
+
+if ( (somma % 2) === 0 && userChoice == "Pari")  {
+ console.log("Hai vinto!")
+}
+ else if ( (somma % 2) !== 0 && userChoice == "Pari" ) {
+console.log("Hai perso!")
+}
+ else if (( somma % 2) === 0 && userChoice == "Dispari" ) {
+  console.log("Hai perso!")
+ }
+ else if ((somma % 2) !== 0 && userChoice == "Dispari") {
+    console.log("Hai vinto!")
+ };

@@ -21,6 +21,14 @@ const userAge = Number(prompt("Quanti anni hai?"));
 //stampa il prezzo del biglietto prima di effettuare una scontistica
 
 const ticketPrice = Number(userKms * 0.21 );
-console.log(ticketPrice + "€");
+//  console.log(ticketPrice + "€");
+console.log("Il tuo biglietto costa " + ticketPrice + "€")
 
 //calcola la scontistica sulla base dell'età dell'utente
+
+if (userAge <= 18 ) {
+    console.log( "Il tuo biglietto scontato costa" + ticketPrice * 0.8 + "€" )
+} else if (userAge >= 65) {
+    console.log( "Il tuo biglietto scontato costa" + ticketPrice * 0.6 + "€" ) 
+}
+

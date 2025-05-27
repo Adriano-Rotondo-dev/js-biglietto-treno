@@ -27,11 +27,13 @@ const ticketPrice = Number(userKms * 0.21 );
 // console.log("Il tuo biglietto costa " + ticketPrice + "€")
 
 // calcola la scontistica sulla base dell'età dell'utente
+// <= 18 anni? 20% di sconto (prezzo * 0.8)
+// >= 65 anni? 40% di sconto (prezzo * 0.6)
 // stampa il prezzo del biglietto finale 
 // inserisci il .toFixed per mostrare i due decimali 
 
 if (userAge <= 18 ) {
-    console.log( "Il tuo biglietto scontato costa €" + (ticketPrice * 0.8).toFixed(2) )
+    console.log( "Il tuo biglietto scontato costa €" + (ticketPrice * 0.8).toFixed(2) ) 
 } else if (userAge >= 65) {
     console.log( "Il tuo biglietto scontato costa €" + (ticketPrice * 0.6).toFixed(2) ) 
 } else {

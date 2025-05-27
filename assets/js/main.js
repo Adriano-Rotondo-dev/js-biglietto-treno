@@ -24,7 +24,7 @@ console.log("Hai dichiarato " + userAge + " anni.")
 
 const ticketPrice = Number(userKms * 0.21 );
 //  console.log(ticketPrice + "€");
-console.log("Il tuo biglietto costa " + ticketPrice + "€")
+// console.log("Il tuo biglietto costa " + ticketPrice + "€")
 
 //calcola la scontistica sulla base dell'età dell'utente
 
@@ -32,5 +32,7 @@ if (userAge <= 18 ) {
     console.log( "Il tuo biglietto scontato costa " + (ticketPrice * 0.8).toFixed(2) + "€" )
 } else if (userAge >= 65) {
     console.log( "Il tuo biglietto scontato costa " + (ticketPrice * 0.6).toFixed(2) + "€" ) 
+} else {
+    console.log("il tuo biglietto costa " + ticketPrice + "€" )
 };
 

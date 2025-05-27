@@ -30,14 +30,14 @@ console.log( somma % 2)
 //stampa il messaggio di vittoria o sconfitta
 
 if ( (somma % 2) === 0 && userChoice == "Pari")  {
- console.log("Hai vinto!")
+ alert("Hai vinto!") 
 }
  else if ( (somma % 2) !== 0 && userChoice == "Pari" ) {
-console.log("Hai perso!")
+alert("Hai perso!") 
 }
  else if (( somma % 2) === 0 && userChoice == "Dispari" ) {
-  console.log("Hai perso!")
+  alert("Hai perso!")
  }
  else if ((somma % 2) !== 0 && userChoice == "Dispari") {
-    console.log("Hai vinto!")
+   alert("Hai vinto!")
  };

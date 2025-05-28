@@ -22,7 +22,8 @@ console.log("Hai dichiarato di avere " + userAge + " anni.")
 // il prezzo del biglietto è definito in base ai km (0.21 € al km)
 // stampa il prezzo del biglietto prima di effettuare una scontistica
 
-const ticketPrice = Number(userKms * 0.21 );
+const pricePerKm = (0.21)
+const ticketPrice = Number(userKms * pricePerKm );
 // console.log(ticketPrice + "€");
 // console.log("Il tuo biglietto costa " + ticketPrice + "€")
 
@@ -30,7 +31,7 @@ const ticketPrice = Number(userKms * 0.21 );
 // <= 18 anni? 20% di sconto (prezzo * 0.8)
 // >= 65 anni? 40% di sconto (prezzo * 0.6)
 // stampa il prezzo del biglietto finale 
-// inserisci il .toFixed per mostrare i due decimali 
+// inserisci il .toFixed per mostrare i due decimali 6
 // ? sostituisci i console.log con alert per pop-up 
 
 if (userAge <= 18 ) {
